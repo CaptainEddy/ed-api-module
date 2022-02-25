@@ -1,0 +1,18 @@
+server:
+  port: 8555
+  
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://herokutest.ci3casdwagpp.ap-south-1.rds.amazonaws.com/aws
+    username: admin
+    password: mypassword
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true       
+        
+  mvc:
+   pathmatch:
+      matching-strategy: ant-path-matcher
